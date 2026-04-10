@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{b9229a38-06cc-43c6-85c1-d3b118c5c37b}">
+		<property name="assetPath">
+			<value>main/ambient/sound_projekt_1_tavern inside.flac</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>39</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b964c306-d558-4d4f-a8c5-68727e84b5ad}</destination>
+		</relationship>
+	</object>
+</objects>
