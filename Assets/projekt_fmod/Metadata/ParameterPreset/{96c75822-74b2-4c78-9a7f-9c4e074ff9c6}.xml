@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{96c75822-74b2-4c78-9a7f-9c4e074ff9c6}">
 		<property name="name">
-			<value>surface</value>
+			<value>surfaceParameter</value>
 		</property>
 		<relationship name="folder">
 			<destination>{371d6f20-7419-434b-bab5-d5a946e579ef}</destination>
@@ -19,12 +19,18 @@
 			<value>3</value>
 		</property>
 		<property name="enumerationLabels">
-			<value>stone</value>
-			<value>wood</value>
+			<value>Stone</value>
+			<value>Wood</value>
 			<value>Value C</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
 		</property>
 	</object>
 </objects>
