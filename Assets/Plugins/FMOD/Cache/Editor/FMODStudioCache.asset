@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/projekt_fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639126258245488061
+  lastModified: 639129768976834850
   FileSizes:
   - Name: Desktop
-    Value: 1318
+    Value: 1310
   Exists: 1
 --- !u!114 &-7285403442991894704
 MonoBehaviour:
@@ -85,9 +85,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/steps_1/surfaceParameter
+  m_Name: parameter:/steps_1/Surface
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: surfaceParameter
+  Name: Surface
   StudioPath: 
   Min: 0
   Max: 2
@@ -96,10 +96,10 @@ MonoBehaviour:
     data1: 1078432585
     data2: 2859342667
   Type: 2
-  IsGlobal: 1
+  IsGlobal: 0
   Labels:
-  - Stone
-  - Wood
+  - stone
+  - wood
   - Value C
   Exists: 1
 --- !u!114 &-4163786876372021121
@@ -112,9 +112,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/jump/surfaceParameter
+  m_Name: parameter:/jump/Surface
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: surfaceParameter
+  Name: Surface
   StudioPath: 
   Min: 0
   Max: 2
@@ -123,10 +123,10 @@ MonoBehaviour:
     data1: 1078432585
     data2: 2859342667
   Type: 2
-  IsGlobal: 1
+  IsGlobal: 0
   Labels:
-  - Stone
-  - Wood
+  - stone
+  - wood
   - Value C
   Exists: 1
 --- !u!114 &-4079665492056652616
@@ -144,10 +144,10 @@ MonoBehaviour:
   Path: Assets/projekt_fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639126258245467976
+  lastModified: 639129768976814795
   FileSizes:
   - Name: Desktop
-    Value: 3173024
+    Value: 3173696
   Exists: 1
 --- !u!114 &-2276585442402174917
 MonoBehaviour:
@@ -284,13 +284,12 @@ MonoBehaviour:
   - {fileID: 5389166874009955028}
   EditorParameters:
   - {fileID: -2276585442402174917}
-  - {fileID: 2971019952504196607}
   MasterBanks:
   - {fileID: -4079665492056652616}
   StringsBanks:
   - {fileID: -8358320878670938754}
   cacheVersion: 131859
-  cacheTime: 639126258245488061
+  cacheTime: 639129768976834850
   SerializableEventsDict:
   - key: event:/amb_tav
     index: 0
@@ -377,9 +376,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/landing/surfaceParameter
+  m_Name: parameter:/landing/Surface
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: surfaceParameter
+  Name: Surface
   StudioPath: 
   Min: 0
   Max: 2
@@ -388,10 +387,10 @@ MonoBehaviour:
     data1: 1078432585
     data2: 2859342667
   Type: 2
-  IsGlobal: 1
+  IsGlobal: 0
   Labels:
-  - Stone
-  - Wood
+  - stone
+  - wood
   - Value C
   Exists: 1
 --- !u!114 &2505299381029817201
@@ -422,33 +421,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
---- !u!114 &2971019952504196607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/surfaceParameter
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: surfaceParameter
-  StudioPath: parameter:/surfaceParameter
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 1078432585
-    data2: 2859342667
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Stone
-  - Wood
-  - Value C
-  Exists: 1
 --- !u!114 &5389166874009955028
 MonoBehaviour:
   m_ObjectHideFlags: 0

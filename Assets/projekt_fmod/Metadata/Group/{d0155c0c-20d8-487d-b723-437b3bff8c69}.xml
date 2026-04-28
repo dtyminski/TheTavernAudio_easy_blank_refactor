@@ -2,11 +2,14 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="MixerGroup" id="{d0155c0c-20d8-487d-b723-437b3bff8c69}">
 		<property name="volume">
-			<value>-80</value>
+			<value>-27.5</value>
 		</property>
 		<property name="name">
 			<value>Outside</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{1d6d1933-927d-4b84-9089-b2878a422ed9}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{567e5413-32ef-4e0d-a8c8-89474045ea49}</destination>
 		</relationship>
@@ -16,6 +19,17 @@
 		<relationship name="output">
 			<destination>{adb2f64c-c705-42d9-af59-86a90cc76a73}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{1d6d1933-927d-4b84-9089-b2878a422ed9}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{567e5413-32ef-4e0d-a8c8-89474045ea49}">
 		<relationship name="effects">

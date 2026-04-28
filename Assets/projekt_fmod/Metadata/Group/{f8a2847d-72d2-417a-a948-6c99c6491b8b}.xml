@@ -4,6 +4,9 @@
 		<property name="name">
 			<value>Inside</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{1d2dfbc4-9fe9-4631-8e15-ea4e330e2c6f}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{02f03152-c7ba-45d1-8b85-5535dd690bbf}</destination>
 		</relationship>
@@ -13,6 +16,17 @@
 		<relationship name="output">
 			<destination>{adb2f64c-c705-42d9-af59-86a90cc76a73}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{1d2dfbc4-9fe9-4631-8e15-ea4e330e2c6f}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{02f03152-c7ba-45d1-8b85-5535dd690bbf}">
 		<relationship name="effects">
