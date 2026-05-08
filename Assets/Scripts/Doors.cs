@@ -32,6 +32,7 @@ public class Doors : MonoBehaviour, IInteractable
         if (!isRotating)
         {
             // Przełącza stan drzwi (otwarte/zamknięte) i uruchamia odpowiednie akcje.
+
             doorsOpened = !doorsOpened;
             StartCoroutine(RotateDoors(doorsOpened ? -65 : 65));
             PlaySound();

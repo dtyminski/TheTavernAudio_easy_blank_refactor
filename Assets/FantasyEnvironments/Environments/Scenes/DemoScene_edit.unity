@@ -727,6 +727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tavern
       objectReference: {fileID: 0}
+    - target: {fileID: 1870896476324792, guid: cb181bc6c302bca40929333077286a04, type: 3}
+      propertyPath: m_TagString
+      value: Doors_1
+      objectReference: {fileID: 0}
     - target: {fileID: 4369231821530882, guid: cb181bc6c302bca40929333077286a04, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9713624
@@ -847,6 +851,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1330636291972076, guid: cb181bc6c302bca40929333077286a04, type: 3}
       insertIndex: -1
       addedObject: {fileID: 159108037}
+    - targetCorrespondingSourceObject: {fileID: 1870896476324792, guid: cb181bc6c302bca40929333077286a04, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 565885161}
   m_SourcePrefab: {fileID: 100100000, guid: cb181bc6c302bca40929333077286a04, type: 3}
 --- !u!1 &159108029 stripped
 GameObject:
@@ -2401,6 +2408,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540904846}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &565885156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1870896476324792, guid: cb181bc6c302bca40929333077286a04, type: 3}
+  m_PrefabInstance: {fileID: 159108028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &565885161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565885156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a3acf8d75e1714f8433f67364d416a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Doors
+  rotationDuration: 1
+  doorsOpened: 1
+  isRotating: 0
+  doorsEvent:
+    Guid:
+      Data1: 218541349
+      Data2: 1261450586
+      Data3: 1201013152
+      Data4: -1557203317
+    Path: event:/door
+  insideRoomSnap:
+    Guid:
+      Data1: -406563350
+      Data2: 1087487421
+      Data3: -1338157634
+      Data4: 1517725300
+    Path: snapshot:/room
 --- !u!1 &613997984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4134,6 +4175,7 @@ GameObject:
   - component: {fileID: 1350753488}
   - component: {fileID: 1350753487}
   - component: {fileID: 1350753486}
+  - component: {fileID: 1350753491}
   m_Layer: 0
   m_Name: amb_tavern
   m_TagString: Untagged
@@ -4170,7 +4212,7 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 1
+  OverrideMinDistance: 2.3981628
   OverrideMaxDistance: 13.33493
 --- !u!135 &1350753487
 SphereCollider:
@@ -4265,6 +4307,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1350753491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350753485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1901628707
+      Data2: 1104591992
+      Data3: 1368833727
+      Data4: 234175866
+    Path: event:/amb_tav
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1373490424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4289115941247784, guid: cb181bc6c302bca40929333077286a04, type: 3}
@@ -4981,7 +5054,7 @@ GameObject:
   - component: {fileID: 1564980533}
   m_Layer: 0
   m_Name: Wood_13
-  m_TagString: Wood
+  m_TagString: Inside_wood
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
