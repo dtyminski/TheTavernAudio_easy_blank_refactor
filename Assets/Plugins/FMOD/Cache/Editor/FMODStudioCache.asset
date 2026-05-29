@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/projekt_fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639138417702310546
+  lastModified: 639156508500895721
   FileSizes:
   - Name: Desktop
     Value: 1536
@@ -171,36 +171,10 @@ MonoBehaviour:
   Path: Assets/projekt_fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639138417702289904
+  lastModified: 639156508500875666
   FileSizes:
   - Name: Desktop
-    Value: 3150880
-  Exists: 1
---- !u!114 &-3634939506642355611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Doors
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorParamRef
-  Name: Doors
-  StudioPath: parameter:/Doors
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 532063908
-    data2: 737860769
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Close
-  - Open
+    Value: 3150848
   Exists: 1
 --- !u!114 &-1464690730187650527
 MonoBehaviour:
@@ -278,7 +252,7 @@ MonoBehaviour:
     data1: 532063908
     data2: 737860769
   Type: 2
-  IsGlobal: 1
+  IsGlobal: 0
   Labels:
   - Close
   - Open
@@ -310,14 +284,13 @@ MonoBehaviour:
   - {fileID: 9190896712257237767}
   - {fileID: 5389166874009955028}
   - {fileID: -8381695938339928022}
-  EditorParameters:
-  - {fileID: -3634939506642355611}
+  EditorParameters: []
   MasterBanks:
   - {fileID: -4079665492056652616}
   StringsBanks:
   - {fileID: -8358320878670938754}
   cacheVersion: 131859
-  cacheTime: 639138417702310546
+  cacheTime: 639156508500895721
   SerializableEventsDict:
   - key: event:/amb_tav
     index: 0
